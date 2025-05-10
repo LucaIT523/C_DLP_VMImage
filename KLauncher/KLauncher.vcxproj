@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{47F17F21-A20D-428C-BA57-B70031AD53B5}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>KLauncher</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../_$(Configuration)</OutDir>
+    <IntDir>../../_intermediate/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+    <ExecutablePath>C:\Program Files %28x86%29\Visual Leak Detector\bin\Win32;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../_$(Configuration)</OutDir>
+    <IntDir>../../_intermediate/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../_$(Configuration)</OutDir>
+    <IntDir>../../_intermediate/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../_$(Configuration)</OutDir>
+    <IntDir>../../_intermediate/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_LAUNCHER_;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;./ui;../cmn;../cmn_crypto;../cmn_detour/include;../cmn_model;../cmn_net;../cmn_vm17;../cmn_ui;../cmn_zip;../kenan</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>../cmn_vm17;../cmn_detour/lib.x86</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_LAUNCHER_;WIN64;_WIN64;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;./ui;../cmn;../cmn_crypto;../cmn_detour/include;../cmn_model;../cmn_net;../cmn_vm17;../cmn_ui;../cmn_zip;../kenan</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>../cmn_vm17;../cmn_detour/lib.x64</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_LAUNCHER_;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;./ui;../cmn;../cmn_crypto;../cmn_detour/include;../cmn_model;../cmn_net;../cmn_vm17;../cmn_ui;../cmn_zip;../kenan</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../cmn_vm17;../cmn_detour/lib.x86</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_LAUNCHER_;WIN64;_WIN64;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;./ui;../cmn;../cmn_crypto;../cmn_detour/include;../cmn_model;../cmn_net;../cmn_vm17;../cmn_ui;../cmn_zip;../kenan</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../cmn_vm17;../cmn_detour/lib.x64</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cmn\base64.hpp" />
+    <ClInclude Include="..\cmn\base64enc.h" />
+    <ClInclude Include="..\cmn\ClaEvent.h" />
+    <ClInclude Include="..\cmn\ClaFileMap.h" />
+    <ClInclude Include="..\cmn\ClaFileProperty.h" />
+    <ClInclude Include="..\cmn\ClaLogMgr.h" />
+    <ClInclude Include="..\cmn\ClaMutex.h" />
+    <ClInclude Include="..\cmn\ClaOsInfo.h" />
+    <ClInclude Include="..\cmn\ClaPathMgr.h" />
+    <ClInclude Include="..\cmn\ClaPowerShellMgr.h" />
+    <ClInclude Include="..\cmn\ClaProcess.h" />
+    <ClInclude Include="..\cmn\ClaRegMgr.h" />
+    <ClInclude Include="..\cmn\ClaSecurityDescriptor.h" />
+    <ClInclude Include="..\cmn\ClaSvcMgr.h" />
+    <ClInclude Include="..\cmn\Global.h" />
+    <ClInclude Include="..\cmn\json.hpp" />
+    <ClInclude Include="..\cmn_crypto\AES.h" />
+    <ClInclude Include="..\cmn_crypto\kncrypto.h" />
+    <ClInclude Include="..\cmn_crypto\SHA256.h" />
+    <ClInclude Include="..\cmn_detour\include\detours.h" />
+    <ClInclude Include="..\cmn_detour\include\detver.h" />
+    <ClInclude Include="..\cmn_detour\include\syelog.h" />
+    <ClInclude Include="..\cmn_net\ClaFwMgr.h" />
+    <ClInclude Include="..\cmn_net\ClaNetAdapter.h" />
+    <ClInclude Include="..\cmn_net\KC_common.h" />
+    <ClInclude Include="..\cmn_ui\ClaTrayIconMgr.h" />
+    <ClInclude Include="..\cmn_ui\mfcCmn.h" />
+    <ClInclude Include="..\kenan\KGlobal.h" />
+    <ClInclude Include="..\kenan\KVmMgr.h" />
+    <ClInclude Include="..\kenan\SessionManager.h" />
+    <ClInclude Include="CaptureVM.h" />
+    <ClInclude Include="ClaDlgAlert.h" />
+    <ClInclude Include="ClaDlgTimeout.h" />
+    <ClInclude Include="ClaDlgTrial.h" />
+    <ClInclude Include="ClaPageAboutUS.h" />
+    <ClInclude Include="ClaPageConfig.h" />
+    <ClInclude Include="ClaPageLogin.h" />
+    <ClInclude Include="ClaPageMain.h" />
+    <ClInclude Include="ClaPageOTP.h" />
+    <ClInclude Include="ClaPagePortlist.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="KLauncher.h" />
+    <ClInclude Include="KLauncherDlg.h" />
+    <ClInclude Include="KRadioPng.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ui\KButtonPng.h" />
+    <ClInclude Include="ui\KCheckbox.h" />
+    <ClInclude Include="ui\KDialog.h" />
+    <ClInclude Include="ui\KEdit.h" />
+    <ClInclude Include="ui\KEditPin.h" />
+    <ClInclude Include="ui\KListCtrl.h" />
+    <ClInclude Include="ui\KProgress.h" />
+    <ClInclude Include="ui\KStaticCombo.h" />
+    <ClInclude Include="ui\KStaticMenu.h" />
+    <ClInclude Include="ui\KStaticPng.h" />
+    <ClInclude Include="ui\KStaticText.h" />
+    <ClInclude Include="ui\KWnd.h" />
+    <ClInclude Include="ui\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cmn\base64enc.cpp" />
+    <ClCompile Include="..\cmn\ClaEvent.cpp" />
+    <ClCompile Include="..\cmn\ClaFileMap.cpp" />
+    <ClCompile Include="..\cmn\ClaFileProperty.cpp" />
+    <ClCompile Include="..\cmn\ClaLogMgr.cpp" />
+    <ClCompile Include="..\cmn\ClaMutex.cpp" />
+    <ClCompile Include="..\cmn\ClaOsInfo.cpp" />
+    <ClCompile Include="..\cmn\ClaPathMgr.cpp" />
+    <ClCompile Include="..\cmn\ClaPowerShellMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaProcess.cpp" />
+    <ClCompile Include="..\cmn\ClaRegMgr.cpp" />
+    <ClCompile Include="..\cmn\ClaSecurityDescriptor.cpp" />
+    <ClCompile Include="..\cmn\ClaSvcMgr.cpp" />
+    <ClCompile Include="..\cmn\Global.cpp" />
+    <ClCompile Include="..\cmn_crypto\AES.cpp" />
+    <ClCompile Include="..\cmn_crypto\kncrypto.cpp" />
+    <ClCompile Include="..\cmn_crypto\SHA256.cpp" />
+    <ClCompile Include="..\cmn_net\ClaFwMgr.cpp" />
+    <ClCompile Include="..\cmn_net\ClaNetAdapter.cpp" />
+    <ClCompile Include="..\cmn_net\KC.cpp" />
+    <ClCompile Include="..\cmn_ui\ClaTrayIconMgr.cpp" />
+    <ClCompile Include="..\cmn_ui\mfcCmn.cpp" />
+    <ClCompile Include="..\kenan\KGlobal.cpp" />
+    <ClCompile Include="..\kenan\KVmMgr.cpp" />
+    <ClCompile Include="..\kenan\SessionManager.cpp" />
+    <ClCompile Include="CaptureVM.cpp" />
+    <ClCompile Include="ClaDlgAlert.cpp" />
+    <ClCompile Include="ClaDlgTimeout.cpp" />
+    <ClCompile Include="ClaDlgTrial.cpp" />
+    <ClCompile Include="ClaPageAboutUS.cpp" />
+    <ClCompile Include="ClaPageConfig.cpp" />
+    <ClCompile Include="ClaPageLogin.cpp" />
+    <ClCompile Include="ClaPageMain.cpp" />
+    <ClCompile Include="ClaPageOTP.cpp" />
+    <ClCompile Include="ClaPagePortlist.cpp" />
+    <ClCompile Include="KLauncher.cpp" />
+    <ClCompile Include="KLauncherDlg.cpp" />
+    <ClCompile Include="KRadioPng.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ui\KButtonPng.cpp" />
+    <ClCompile Include="ui\KCheckbox.cpp" />
+    <ClCompile Include="ui\KDialog.cpp" />
+    <ClCompile Include="ui\KEdit.cpp" />
+    <ClCompile Include="ui\KEditPin.cpp" />
+    <ClCompile Include="ui\KListCtrl.cpp" />
+    <ClCompile Include="ui\KProgress.cpp" />
+    <ClCompile Include="ui\KStaticCombo.cpp" />
+    <ClCompile Include="ui\KStaticMenu.cpp" />
+    <ClCompile Include="ui\KStaticPng.cpp" />
+    <ClCompile Include="ui\KStaticText.cpp" />
+    <ClCompile Include="ui\KWnd.cpp" />
+    <ClCompile Include="ui\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KLauncher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\KLauncher.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\about_us_bg.png" />
+    <Image Include="res\alert1.png" />
+    <Image Include="res\arrow-left.png" />
+    <Image Include="res\background.png" />
+    <Image Include="res\btn_alert_danger.png" />
+    <Image Include="res\btn_alert_error.png" />
+    <Image Include="res\btn_alert_warning.png" />
+    <Image Include="res\btn_close.png" />
+    <Image Include="res\btn_close_d.png" />
+    <Image Include="res\btn_close_h.png" />
+    <Image Include="res\btn_close_p.png" />
+    <Image Include="res\btn_full.png" />
+    <Image Include="res\btn_full_h.png" />
+    <Image Include="res\btn_half_b.png" />
+    <Image Include="res\btn_half_b_h.png" />
+    <Image Include="res\btn_half_r.png" />
+    <Image Include="res\btn_half_r_h.png" />
+    <Image Include="res\btn_icon_down.png" />
+    <Image Include="res\btn_icon_down_h.png" />
+    <Image Include="res\btn_icon_pause.png" />
+    <Image Include="res\btn_icon_pause_h.png" />
+    <Image Include="res\btn_icon_policy.png" />
+    <Image Include="res\btn_icon_policy_h.png" />
+    <Image Include="res\btn_icon_refresh.png" />
+    <Image Include="res\btn_icon_refresh_h.png" />
+    <Image Include="res\btn_icon_start.png" />
+    <Image Include="res\btn_icon_start_h.png" />
+    <Image Include="res\btn_icon_stop.png" />
+    <Image Include="res\btn_icon_stop_h.png" />
+    <Image Include="res\btn_min.png" />
+    <Image Include="res\btn_min_h.png" />
+    <Image Include="res\btn_next_hover.png" />
+    <Image Include="res\btn_next_normal.png" />
+    <Image Include="res\btn_ok_hover.png" />
+    <Image Include="res\btn_ok_normal.png" />
+    <Image Include="res\btn_skip_hover.png" />
+    <Image Include="res\btn_skip_normal.png" />
+    <Image Include="res\btn_small_blue.png" />
+    <Image Include="res\btn_small_blue_h.png" />
+    <Image Include="res\btn_small_red.png" />
+    <Image Include="res\btn_small_red_d.png" />
+    <Image Include="res\btn_small_red_h.png" />
+    <Image Include="res\check.png" />
+    <Image Include="res\combo_active.png" />
+    <Image Include="res\combo_item_first.png" />
+    <Image Include="res\combo_item_first_h.png" />
+    <Image Include="res\combo_item_last.png" />
+    <Image Include="res\combo_item_last_h.png" />
+    <Image Include="res\combo_item_middle.png" />
+    <Image Include="res\combo_item_middle_h.png" />
+    <Image Include="res\combo_normal.png" />
+    <Image Include="res\connected.png" />
+    <Image Include="res\disconnect.png" />
+    <Image Include="res\edit_pin_fill_sel.png" />
+    <Image Include="res\edit_pin_fill_unsel.png" />
+    <Image Include="res\edit_pin_sel.png" />
+    <Image Include="res\edit_pin_unsel.png" />
+    <Image Include="res\edit_sel.png" />
+    <Image Include="res\edit_unsel.png" />
+    <Image Include="res\icon_config.png" />
+    <Image Include="res\icon_eye.png" />
+    <Image Include="res\icon_ip.png" />
+    <Image Include="res\icon_mail.png" />
+    <Image Include="res\icon_mid.png" />
+    <Image Include="res\icon_port.png" />
+    <Image Include="res\icon_pwd.png" />
+    <Image Include="res\icon_radio1.png" />
+    <Image Include="res\icon_radio2.png" />
+    <Image Include="res\icon_radio3.png" />
+    <Image Include="res\KLauncher.ico" />
+    <Image Include="res\list_row_1.png" />
+    <Image Include="res\list_row_2.png" />
+    <Image Include="res\list_row_sel.png" />
+    <Image Include="res\list_scroll.png" />
+    <Image Include="res\lit_head.png" />
+    <Image Include="res\Logo.png" />
+    <Image Include="res\main_title.png" />
+    <Image Include="res\net_status_bg.png" />
+    <Image Include="res\panel_config.png" />
+    <Image Include="res\panel_login.png" />
+    <Image Include="res\panel_main.png" />
+    <Image Include="res\panel_otp.png" />
+    <Image Include="res\port_title.png" />
+    <Image Include="res\progress_fill.png" />
+    <Image Include="res\progress_white.png" />
+    <Image Include="res\trial_background.png" />
+    <Image Include="res\trial_login.png" />
+    <Image Include="res\trial_main.png" />
+    <Image Include="res\trial_setting.png" />
+    <Image Include="res\uncheck.png" />
+    <Image Include="ui\menu.png" />
+    <Image Include="ui\menu_sel.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cmn_ui">
+      <UniqueIdentifier>{f8dee407-f89f-44f7-b89f-e7cdd17de310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_model">
+      <UniqueIdentifier>{0a43b137-df7d-4fb3-9f28-554a9abbff85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn">
+      <UniqueIdentifier>{348f1ae8-610d-44e2-87db-e6011e040633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kenan">
+      <UniqueIdentifier>{6f2055cb-8ba6-4415-9006-d827a63537a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_vm17">
+      <UniqueIdentifier>{17055254-c730-48b3-96cf-ac5e7f85da38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_detour">
+      <UniqueIdentifier>{d1c6ce37-7edc-459a-837a-e55ea04bd62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_detour\include">
+      <UniqueIdentifier>{cac6c37b-4496-4375-91ae-007056c33575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_net">
+      <UniqueIdentifier>{f1b2aa35-be82-4522-9acd-7d7ff566b380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_zip">
+      <UniqueIdentifier>{822571f2-a0ab-447f-88fd-d09876cbbef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_crypto">
+      <UniqueIdentifier>{26027891-a4b9-45f3-be70-8c81d437f8a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="launcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="launcherDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaListCtrl.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\mfcCmn.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_model\ClaModelImage.h">
+      <Filter>cmn_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_model\ClaModelBase.h">
+      <Filter>cmn_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_model\ClaModelManager.h">
+      <Filter>cmn_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaEvent.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaFileMap.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaFileProperty.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaMutex.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaOsInfo.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaPathMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaProcess.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaRegMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaSecurityDescriptor.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaSvcMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\Global.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\KGlobal.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\KVmMgr.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_vm17\vix.h">
+      <Filter>cmn_vm17</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_vm17\vm_basic_types.h">
+      <Filter>cmn_vm17</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\detours.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\detver.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\syelog.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\SessionManager.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgOtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\KC_common.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\ZipUtil.h">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\zip_file.hpp">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaButtonIcon.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgPortList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\ClaNetAdapter.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\SHA256.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\json.hpp">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\base64.hpp">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\base64enc.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgTimeout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\AES.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\kncrypto.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaLogMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\TreeListCtrl.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\TreeListWnd.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaDialogPng.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaStaticPng.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaStaticFont.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaButtonDraw.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaCheckDraw.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaResCmn.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\ClaEditCtrl.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\ClaFwMgr.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlg64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\CHeaderCtrlEx.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_ui\CListCtrlEx.h">
+      <Filter>cmn_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaPowerShellMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="launcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="launcherDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaListCtrl.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\mfcCmn.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_model\ClaModelImage.cpp">
+      <Filter>cmn_model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_model\ClaModelBase.cpp">
+      <Filter>cmn_model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_model\ClaModelManager.cpp">
+      <Filter>cmn_model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaEvent.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaFileMap.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaFileProperty.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaMutex.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaOsInfo.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaPathMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaProcess.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaRegMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaSecurityDescriptor.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaSvcMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\Global.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\KGlobal.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\KVmMgr.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\SessionManager.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgOtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\KC.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_zip\ZipUtil.cpp">
+      <Filter>cmn_zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaButtonIcon.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgPortList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\ClaNetAdapter.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\SHA256.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\base64enc.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgTimeout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\AES.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\kncrypto.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaLogMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\TreeListCtrl.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\TreeListWnd.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaDialogPng.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaStaticPng.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaStaticFont.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaButtonDraw.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaCheckDraw.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaResCmn.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\ClaEditCtrl.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\ClaFwMgr.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlg64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\CHeaderCtrlEx.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_ui\CListCtrlEx.cpp">
+      <Filter>cmn_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaPowerShellMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="launcher.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\launcher.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\launcher.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\information.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\wrench_16456837.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\policy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\refresh.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\check1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\min.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\exit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\exit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\min.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_run.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_turn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_eye.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_refresh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_info.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_turn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_setting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\disconnect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\disconn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\conn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

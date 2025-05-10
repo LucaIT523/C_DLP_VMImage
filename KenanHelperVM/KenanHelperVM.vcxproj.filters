@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cmn">
+      <UniqueIdentifier>{d600384a-fa4f-465f-8e2e-07cc94525907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_detour">
+      <UniqueIdentifier>{5bd04104-0652-460e-903f-1e04f7356e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_detour\include">
+      <UniqueIdentifier>{b6b7844c-e015-4a2b-b432-b752e2343df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_crypto">
+      <UniqueIdentifier>{d21c137f-4478-4861-9618-fa2b86746db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kenan">
+      <UniqueIdentifier>{e89ef906-2673-434f-8e1c-f7646283cf25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{fd8fd103-4c83-4294-bfdb-f7b7afcfaa91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KenanHelperVM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaEvent.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaFileMap.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaFileProperty.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaMutex.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaOsInfo.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaPathMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaProcess.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaRegMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaSecurityDescriptor.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaSvcMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\Global.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\AES.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\kncrypto.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\SHA256.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\KGlobal.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanClipHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanVmxHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanHooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanSecuProc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanGlobalHookHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanVmxRedirector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\KDialog.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\KStaticPng.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\KWnd.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Utility.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanBoundary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgBound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KenanHelperVM.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\KenanHelperVM.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanHelperVM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaEvent.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaFileMap.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaFileProperty.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaMutex.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaOsInfo.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaPathMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaProcess.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaRegMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaSecurityDescriptor.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaSvcMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\Global.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\detours.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\detver.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_detour\include\syelog.h">
+      <Filter>cmn_detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\AES.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\kncrypto.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\SHA256.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\KGlobal.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanHoos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanSecuProc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanCliphelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanGlobalHookHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanVmxHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanVmxRedirector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\KDialog.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\KStaticPng.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\KWnd.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Utility.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanBoundary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgBound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KenanHelperVM.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\list.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\main.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\top_bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

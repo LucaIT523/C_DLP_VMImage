@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cmn">
+      <UniqueIdentifier>{a98c2b59-898a-430b-9ccd-239dad45a7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_net">
+      <UniqueIdentifier>{cde42112-534f-4a0d-b082-53069388ff66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_zip">
+      <UniqueIdentifier>{9e76b0a7-1ba9-4d8b-bc64-b8a5957548fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kenan">
+      <UniqueIdentifier>{e17aaeea-0fc0-4392-aba1-a94d36d59cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_crypto">
+      <UniqueIdentifier>{58eb6419-fdc3-4bbb-8fae-af0a549434d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KenanConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaPathMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaProcess.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaRegMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\ServerConn.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_zip\ZipUtil.cpp">
+      <Filter>cmn_zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\SessionManager.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\KC.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_crypto\SHA256.cpp">
+      <Filter>cmn_crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\base64enc.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaOsInfo.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KenanConn.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\KenanConn.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaPathMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaProcess.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaRegMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ini.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\ServerConn.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\ZipUtil.h">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\zip_file.hpp">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\SessionManager.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\KC_common.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_crypto\SHA256.h">
+      <Filter>cmn_crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\base64enc.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaOsInfo.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KenanConn.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cmn_net">
+      <UniqueIdentifier>{88a96851-610e-4844-bc41-030c24eb135a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn">
+      <UniqueIdentifier>{a5a1350a-b554-42c0-af81-e1125e8c8334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kenan">
+      <UniqueIdentifier>{df5f37b4-11a0-4194-a787-3f1ad46eb955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmn_zip">
+      <UniqueIdentifier>{7b29be4b-2188-490f-9d67-8d10fafb782a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KenanNet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KenanNetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_net\ServerConn.h">
+      <Filter>cmn_net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaPathMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ini.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaProcess.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn\ClaRegMgr.h">
+      <Filter>cmn</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgDownload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kenan\SessionManager.h">
+      <Filter>kenan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\zip_file.hpp">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmn_zip\ZipUtil.h">
+      <Filter>cmn_zip</Filter>
+    </ClInclude>
+    <ClInclude Include="ClaDlgOtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KenanNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KenanNetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_net\ServerConn.cpp">
+      <Filter>cmn_net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaPathMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaProcess.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn\ClaRegMgr.cpp">
+      <Filter>cmn</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgDownload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kenan\SessionManager.cpp">
+      <Filter>kenan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmn_zip\ZipUtil.cpp">
+      <Filter>cmn_zip</Filter>
+    </ClCompile>
+    <ClCompile Include="ClaDlgOtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KenanNet.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\KenanNet.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\KenanNet.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
